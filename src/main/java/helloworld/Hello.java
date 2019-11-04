@@ -6,9 +6,8 @@ import com.example.clients.petstore.user.UserClient;
 import java.util.concurrent.CompletionStage;
 
 public class Hello {
-  public static void main(String[] args) {
+  public CompletionStage<GetUserByNameResponse> execute() {
       UserClient client = new UserClient.Builder().build();
-      CompletionStage<GetUserByNameResponse> result = client.getUserByName("billg").call();
-      System.out.println(result);
+      return client.getUserByName("billg").call();
   }
 }
