@@ -94,7 +94,7 @@
             <configuration>
               <language>java</language>
               <kind>client</kind>
-              <framework>async-http-client</framework>
+              <framework>dropwizard</framework>
               <specPath>${project.basedir}/src/main/openapi/petstore.json</specPath>
               <packageName>com.example.clients.petstore</packageName>
             </configuration>
