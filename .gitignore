@@ -27,4 +27,5 @@ target/
 *.tmp
 .classpath
 .project
+.settings/
 *.iml
