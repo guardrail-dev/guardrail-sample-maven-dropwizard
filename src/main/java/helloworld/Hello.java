@@ -8,6 +8,6 @@ import java.util.concurrent.CompletionStage;
 public class Hello {
   public CompletionStage<GetUserByNameResponse> execute() {
       UserClient client = new UserClient.Builder().build();
-      return client.getUserByName("billg").call();
+      return client.getUserByName("hello").call();
   }
 }
