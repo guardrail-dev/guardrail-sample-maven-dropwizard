@@ -27,7 +27,7 @@ public class EqualsContractTest {
                   verify(classInfo.loadClass());
                 }
             }
-        }        
+        }
     }
 
     private static void verify(final Class clazz) {
