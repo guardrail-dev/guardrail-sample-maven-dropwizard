@@ -1,6 +1,6 @@
-# maven-guardrail-java-codegen-example
+# guardrail-sample-maven-dropwizard
 
-This project uses [guardrail-maven-plugin](https://github.com/twilio/guardrail-maven-plugin)
+This project uses [guardrail-maven-plugin](https://github.com/guardrail-dev/guardrail-maven-plugin)
 
 
-see: [pom.xml](https://github.com/sullis/maven-guardrail-java-codegen-example/blob/master/pom.xml#L119)
+see: [pom.xml](https://github.com/guardrail-dev/guardrail-sample-maven-dropwizard/blob/master/pom.xml#L119)
