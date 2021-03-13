@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>io.github.sullis</groupId>
-  <artifactId>maven-guardrail-java-codegen-example</artifactId>
+  <groupId>com.example</groupId>
+  <artifactId>guardrail-sample-maven-dropwizard</artifactId>
   <packaging>jar</packaging>
-  <name>maven-guardrail-java-codegen-example</name>
+  <name>guardrail-sample-maven-dropwizard</name>
   <version>0.0.1-SNAPSHOT</version>
-  <description>Maven guardrail example</description>
+  <description>Maven guardrail dropwizard example</description>
   <licenses>
     <license>
       <name>Apache License 2.0</name>
