@@ -17,7 +17,7 @@
 
   <properties>
     <junit.version>5.7.2</junit.version>
-    <logback.version>1.2.3</logback.version>
+    <logback.version>1.2.5</logback.version>
     <jackson.version>2.12.4</jackson.version>
     <slf4j.version>1.7.31</slf4j.version>
     <skip.tests>false</skip.tests>
@@ -101,7 +101,7 @@
     <dependency>
       <groupId>io.github.classgraph</groupId>
       <artifactId>classgraph</artifactId>
-      <version>4.8.109</version>
+      <version>4.8.115</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
