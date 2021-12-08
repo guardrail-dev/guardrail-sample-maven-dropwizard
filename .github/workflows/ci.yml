@@ -15,37 +15,12 @@ jobs:
       matrix:
         java: [ '8', '11', '17' ]
     steps:
-    - uses: actions/checkout@v2.4.0
+    - uses: actions/checkout@v2
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
         distribution: 'zulu'
         java-version: ${{ matrix.java }}
-    - name: print Java version
-      run: java -version
-    - uses: actions/cache@v2.1.7
-      with:
-        path: ~/.m2/repository
-        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-        restore-keys: |
-          ${{ runner.os }}-maven-
+        cache: 'maven'
     - name: Build
       run: mvn --no-transfer-progress -B clean package --file pom.xml
-
-  automerge:
-    runs-on: [ubuntu-latest]
-    name: automerge
-    needs: [build]
-    if: github.base_ref == 'master' && github.actor == 'dependabot[bot]'
-    steps:
-    - name: merge
-      uses: actions/github-script@v5
-      with:
-        script: |
-          github.pulls.merge({
-            owner: context.payload.repository.owner.login,
-            repo: context.payload.repository.name,
-            pull_number: context.payload.pull_request.number,
-            merge_method: 'squash'
-          })
-        github-token: ${{secrets.GITHUB_TOKEN}}
