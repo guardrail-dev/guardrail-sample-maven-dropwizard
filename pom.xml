@@ -132,9 +132,9 @@
         </configuration>
       </plugin>
       <plugin>
-        <groupId>com.twilio</groupId>
-        <artifactId>guardrail-maven-plugin_2.12</artifactId>
-        <version>0.65.2</version>
+        <groupId>dev.guardrail</groupId>
+        <artifactId>guardrail-maven-plugin</artifactId>
+        <version>0.66.0</version>
         <executions>
           <execution>
             <id>generate-petstore-client</id>
