@@ -134,7 +134,7 @@
       <plugin>
         <groupId>dev.guardrail</groupId>
         <artifactId>guardrail-maven-plugin</artifactId>
-        <version>0.70.0</version>
+        <version>0.71.0</version>
         <executions>
           <execution>
             <id>generate-petstore-client</id>
